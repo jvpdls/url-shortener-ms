@@ -51,7 +51,7 @@ This endpoint allows you to shorten a URL.
 
 #### Example Request:
 
-    POST /api/shorten
+    POST http://localhost:3000/api/shorten
     Content-Type: application/json
     
     {
