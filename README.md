@@ -5,11 +5,16 @@ This is a simple URL shortener microservice built with Node.js, utilizing the [S
 
 Table of Contents
 -----------------
-
+*   [Live project](#live-project)
 *   [Installation](#installation)
 *   [Usage](#usage)
 *   [API Documentation](#api-documentation)
 *   [Contributing](#contributing)
+
+Live Project
+------------
+
+This project can be visited live [here](https://b55a8ec2-97f7-4c0a-a7b9-3a3d3ad50ab5-00-k53jh1r3a737.spock.replit.dev/).
 
 Installation
 ------------
@@ -51,7 +56,7 @@ This endpoint allows you to shorten a URL.
 
 #### Example Request:
 
-    POST http://localhost:3000/api/shorten
+    POST /api/shorten
     Content-Type: application/json
     
     {
