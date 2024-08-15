@@ -6,16 +6,10 @@ This is a simple URL shortener microservice built with Node.js, utilizing the [S
 Table of Contents
 -----------------
 
-*   [Live Preview](#live-preview) 
 *   [Installation](#installation)
 *   [Usage](#usage)
 *   [API Documentation](#api-documentation)
 *   [Contributing](#contributing)
-
-Published project
-------------
-
-See this project live [here](https://url-shortener-ms.vercel.app/).
 
 Installation
 ------------
