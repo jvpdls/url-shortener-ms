@@ -6,6 +6,7 @@ import { fileURLToPath } from "url";
 
 dotenv.config();
 
+const PORT = 3000;
 const app = express();
 
 const __filename = fileURLToPath(import.meta.url);
@@ -18,4 +19,6 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use(express.json());
 app.use("/", router);
 
-export default app;
+app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
+});

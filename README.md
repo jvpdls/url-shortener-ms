@@ -37,7 +37,7 @@ To run this project locally, follow these steps:
     
 4.  **Start the server:**
     
-        > vercel dev
+        > node index.js
     
 Usage
 -----
