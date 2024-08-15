@@ -7,9 +7,13 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": {
+    "name": "João Santos",
+    "email": "contato@joaosantos.net.br",
+    "url": "https://linkedin.com/in/joaovpdls/"
+  },
   "license": "ISC",
-  "description": "",
+  "description": "URL shortener microservice built with Node.js.",
   "dependencies": {
     "dotenv": "^16.4.5",
     "ejs": "^3.1.10",
