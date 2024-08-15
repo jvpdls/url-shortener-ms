@@ -25,9 +25,7 @@ To run this project locally, follow these steps:
     
         > npm i
 
-3.  Install **Vercel CLI** following the instructions [here](https://vercel.com/docs/cli)
-
-4.  Rename **.env.example** to **.env**
+3.  Rename **.env.example** to **.env**
     
 4.  **Start the server:**
     
@@ -35,6 +33,8 @@ To run this project locally, follow these steps:
     
 Usage
 -----
+
+By default, the microservice will be available at http://localhost:3000/.
 
 You can interact with the API using an HTTP client like Postman or Curl (for POST requests), or through the browser (GET requests). You can shorten URLs and retrieve the original URLs by following the API documentation below.
 
