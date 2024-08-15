@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link
+            rel="stylesheet"
+            href="https://cdn.simplecss.org/simple.min.css"
+        />
+        <link rel="shortcut icon" href="/favicon.png" type="image/png">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>URL Shortener Microservice</title>
+    </head>
+    <body>
+        <header>
+            <h1>URL Shortener Microservice</h1>
+            <p>Short URL Creation</p>
+        </header>
+        <main>
+            <h2>Documentation</h2>
+            <article>
+                <section>
+                    <h3>POST /api/shorten</h3>
+                    <p>This endpoint allows you to shorten a URL.</p>
+                    <h4>Parameters:</h4>
+                    <p>
+                        <strong>originUrl</strong> (required) - The original
+                        URL that you want to shorten.
+                    </p>
+                    <h4>Example Request:</h4>
+                    <pre>
+POST /api/shorten
+Content-Type: application/json
+
+{
+    "originUrl": "https://www.example.com"
+}</pre
+                    >
+                    <h4>Response:</h4>
+                    <p>
+                        <strong>201 Created</strong><br />
+                        Returns a JSON object containing the shortened URL ID.
+                    </p>
+                    <h4>Example Response:</h4>
+                    <pre>
+{
+    "id": "1234",
+    "shortUrl": "http://example.com/1234"
+}</pre
+                    >
+                </section>
+                <section>
+                    <h3>GET /api/:id</h3>
+                    <p>
+                        This endpoint retrieves the original URL associated with
+                        a shortened URL ID and redirects to it.
+                    </p>
+                    <h4>Path Parameters:</h4>
+                    <p>
+                        <strong>id</strong> (required) - The unique ID of the
+                        shortened URL.
+                    </p>
+                    <h4>Example Request:</h4>
+                    <pre>GET /api/1234</pre>
+                    <h4>Response:</h4>
+                    <p>
+                        <strong>302 Found</strong><br />
+                        Redirects the client to the original URL.
+                    </p>
+                </section>
+            </article>
+        </main>
+        <footer>
+            <p>
+                By <a href="https://linkedin.com/in/joaovpdls/">João Santos</a>
+            </p>
+        </footer>
+    </body>
+</html>

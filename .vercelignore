@@ -1,0 +1,12 @@
+node*modules/
+*.log
+_.md
+_.git/
+.gitignore
+.vscode/
+_.test.js
+_.spec.js
+_.npmrc
+_.yarnrc
+.env*
+*.db
