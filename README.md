@@ -18,8 +18,8 @@ To run this project locally, follow these steps:
 
 1.  **Clone the repository:**
     
-        > git clone https://github.com/yourusername/url-shortener-microservice.git
-        > cd url-shortener-microservice
+        > git clone https://github.com/jvpdls/url-shortener-ms.git
+        > cd url-shortener-ms
     
 2.  **Install dependencies:**
     
@@ -67,7 +67,7 @@ Returns a JSON object containing the shortened URL ID.
 
     {
         "id": "1234",
-        "shortUrl": "http://example.com/1234"
+        "shortUrl": "http://localhost:3000/1234"
     }
 
 ### GET /api/:id
@@ -80,7 +80,7 @@ This endpoint retrieves the original URL associated with a shortened URL ID and 
 
 #### Example Request:
 
-    > GET http://example.com/api/1234
+    > GET http://localhost:3000/api/1234
 
 #### Response:
 
