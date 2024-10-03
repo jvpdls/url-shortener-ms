@@ -15,10 +15,9 @@
   "license": "ISC",
   "description": "URL shortener microservice built with Node.js.",
   "dependencies": {
+    "@supabase/supabase-js": "^2.45.4",
     "dotenv": "^16.4.5",
     "ejs": "^3.1.10",
-    "express": "^4.19.2",
-    "nanoid": "^5.0.7",
-    "sqlite3": "^5.1.7"
+    "express": "^4.19.2"
   }
 }
