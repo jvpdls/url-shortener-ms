@@ -18,11 +18,4 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use(express.json());
 app.use("/", router);
 
-if (!process.env.VERCEL) {
-  const PORT = 3000;
-  app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
-  });
-}
-
 export default app;
