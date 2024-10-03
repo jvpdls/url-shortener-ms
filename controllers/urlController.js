@@ -1,4 +1,4 @@
-import { generateShortUrl, getOriginUrl } from "../services/urlService.js";
+import { insertUrl, fetchUrl } from "../models/urlModel.js";
 import isAvalidUrl from "../utils/urlValidator.js";
 
 const createShortUrl = async (req, res) => {
@@ -9,7 +9,7 @@ const createShortUrl = async (req, res) => {
     }
 
     try {
-        const id = await generateShortUrl(originUrl);
+        const id = await insertUrl(originUrl);
         res.status(201).send({
             id: id,
             shortUrl: `${process.env.HOST}api/get/${id}`,
@@ -22,8 +22,9 @@ const createShortUrl = async (req, res) => {
 const redirectUrl = async (req, res) => {
     const { id } = req.params;
     try {
-        const originUrl = await getOriginUrl(id);
+        const originUrl = await fetchUrl(id);
         if (originUrl) {
+            console.log(`Redirecting to ${originUrl}`);
             res.redirect(originUrl);
         } else {
             res.status(404).send({ error: "URL not found." });
