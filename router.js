@@ -1,6 +1,6 @@
 import express from "express";
-import { createShortUrl, redirectUrl } from "./controllers/urlController.js";
-import renderHome from "./controllers/pageController.js";
+import { createShortUrl, redirectUrl } from "./src/controllers/urlController.js";
+import renderHome from "./src/controllers/pageController.js";
 
 const router = express.Router();
 
