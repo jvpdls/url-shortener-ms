@@ -3,12 +3,39 @@ URL Shortener Microservice
 
 This is a simple URL shortener microservice built with Node.js, utilizing the [Simple CSS](https://simplecss.org/) library for styling its documentation. The microservice allows users to shorten long URLs and retrieve the original URLs using a shortened URL ID.
 
+All the URLs are being stored through a [Supabase Postgres database](https://supabase.com/).
+
 Table of Contents
 -----------------
+*   [Live preview](#live-preview)
+*   [Requirements](#requirements)
+*   [Database schema](#database-schema)
 *   [Installation](#installation)
 *   [Usage](#usage)
 *   [API Documentation](#api-documentation)
 *   [Contributing](#contributing)
+
+Live preview
+------------
+
+A deployed version of this project can be found [here](https://url-shortener-ms.vercel.app/).
+
+Requirements
+------------
+
+- [Node.js](https://nodejs.org/)
+- [Vercel CLI](https://vercel.com/docs/cli)
+- [Supabase](https://supabase.com/)
+
+Database schema
+---------------
+
+**Table: shortlinks**
+
+| Field         | Type     | Constraints      |
+|---------------|----------|------------------|
+| id            | integer  | primary key      |
+| original_url  | varchar  |                  |
 
 Installation
 ------------
@@ -24,18 +51,18 @@ To run this project locally, follow these steps:
     
         > npm i
 
-3.  Rename **.env.example** to **.env**
+3.  Rename **.env.example** to **.env** and fill its variables
     
 4.  **Start the server:**
     
-        > node index.js
+        > vercel dev
     
 Usage
 -----
 
-By default, the microservice will be available at http://localhost:3000/.
+You can either acess the [microservice live](https://url-shortener-ms.vercel.app/) or run it locally, which will be available at http://localhost:3000/.
 
-You can interact with the API using an HTTP client like Postman or Curl (for POST requests), or through the browser (GET requests). You can shorten URLs and retrieve the original URLs by following the API documentation below.
+Interact with the API using an HTTP client like Postman or Curl (for POST requests), or through the browser (GET requests). You can shorten URLs and retrieve the original URLs by following the API documentation below.
 
 API Documentation
 -----------------
