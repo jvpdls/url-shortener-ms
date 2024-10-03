@@ -51,9 +51,11 @@ To run this project locally, follow these steps:
     
         > npm i
 
-3.  Rename **.env.example** to **.env** and fill its variables
+3.  Set up a **Supabase project** and create the **shortlinks** table
+
+4.  Rename **.env.example** to **.env** and set its variables
     
-4.  **Start the server:**
+5.  **Start the server:**
     
         > vercel dev
     
