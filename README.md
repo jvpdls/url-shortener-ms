@@ -95,7 +95,7 @@ Returns a JSON object containing the shortened URL ID.
 
     {
         "id": "1234",
-        "shortUrl": "http://localhost:3000/1234"
+        "shortUrl": "http://localhost:3000/api/1234"
     }
 
 ### GET /api/:id
@@ -108,7 +108,7 @@ This endpoint retrieves the original URL associated with a shortened URL ID and 
 
 #### Example Request:
 
-    > GET http://localhost:3000/api/get/1234
+    > GET http://localhost:3000/api/1234
 
 #### Response:
 

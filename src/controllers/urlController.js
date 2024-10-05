@@ -12,7 +12,7 @@ const createShortUrl = async (req, res) => {
         const id = await insertUrl(originUrl);
         res.status(201).send({
             id: id,
-            shortUrl: `${process.env.HOST}api/get/${id}`,
+            shortUrl: `${process.env.HOST}api/${id}`,
         });
     } catch (error) {
         res.status(500).send("Error while generating a short URL.");
